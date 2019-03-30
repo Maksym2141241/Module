@@ -3,6 +3,11 @@ body{
     background: #3e3b4a;
     color: #ffffff;
 }
+a{
+    text-decoration: none;
+    text-transform: none;
+    color: inherit;
+}
 /*-----------------HEADER------------------*/
 .header-container{
     display: flex;
@@ -93,7 +98,7 @@ main{
     margin: 0 auto;
 }
 .top-a{
-    background: url(img/square1-bg.jpg);
+    background: url(img/square1-bg.jpg) no-repeat no-repeat;
     height: 512px;
     flex-direction: column;
 }
@@ -173,11 +178,12 @@ main{
     font-size: 48px;
     font-weight: 400;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 73px;
 
 }
 .top-b-right{
     width: 379px;
+    
 }
 .top-b-come{
     font-family: 'Times New Roman', Times, serif;
@@ -190,12 +196,21 @@ main{
 .top-b-your-email{
     font-size: 20px;
     font-weight: 700;
-    border: 3px solid;
+    border: 3px solid white;
     text-align: center;
     padding: 7px 0 7px 0;
     width: 280px;
     opacity: 0.7;
     margin: 0 auto;
+    background: transparent;
+    color: inherit;
+    display: flex;
+
+}
+input::placeholder{
+    color: white;
+    font-family: inherit;
+    line-height: 1.2;
 }
 .top-b-we-respect{
     font-size: 14px;
@@ -212,5 +227,139 @@ main{
     padding: 7px 0 7px 0;
     text-align: center;
     margin-top: 19px;
+}
+.top-c-left-1, .top-c-left-2, .top-c-right {
+    height: 420px;
+}
+.top-c-left-1{
+    background: url(img/square4-bg.jpg) no-repeat no-repeat;
+}
+.top-c-left-2{
+    background: url(img/square5-bg.jpg) no-repeat no-repeat;
+}
+.top-c-right{
+    background: url(img/square6-bg.png) no-repeat no-repeat bottom right #1ab467;
+    flex-basis: 460px;
+}
+.top-c-left-1, .top-c-left-2{
+    margin-right: 20px;
+    flex-basis: 260px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 
+
+}
+.top-c-right-cameras{
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: #ffc7b0;
+    margin-left: 42px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.top-c-cameras{
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: #ffc7b0;
+    text-transform: uppercase;
+    margin-top: 30px;
+    text-align: center;
+}
+.top-c-leica-m{
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+.bottom-review{
+    font-size: 20px;
+    font-weight: 700;
+    color: #3d3c4a;
+    background: #ffe18e;
+    width: 93px;
+    text-align: center;
+    line-height: 42px;
+    margin: 0 auto;
+    margin-bottom: 39px;
+}
+.top-c-leica-d{
+    font-size: 36px;
+    font-weight: 700;
+    margin-left: 42px;
+    margin-top: 15px;
+}
+.top-c-limited{
+    margin-left: 42px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 18px;
+    margin-bottom: 168px;
+}
+a:hover{
+    opacity: 0.8;
+}
+a div.bottom-read-more:hover, a div.buttom-subscribe:hover{
+    opacity: 0.8;
+}
+@media (max-width: 1024px){
+    .header-search, .footer-social{
+        margin-right: 20px;
+    }
+    .header-menu, .footer-copyright{
+        margin-left: 20px;
+    }
+}
+@media (max-width: 592px){
+    .top-b, .top-c{
+        flex-direction: column;
+    }
+    .top-b-left{
+        margin-right: 0;
+        margin-bottom: 20px;
+        
+    }
+    .top-b-right{
+        width: 100%
+    }
+    .top-b-we-respect{
+        margin-bottom: 25px;
+    }
+    .top-c-left-2{
+        margin-top: 20px;
+        margin-right: 0;
+        background: url(img/square5-bg.jpg) no-repeat;
+        background-size: 100%
+        
+    }
+    .top-c-left-1{
+        margin-right: 0;
+        background: url(img/square4-bg.jpg) no-repeat;
+        background-size: 100%
+    }
+    .top-b-good{
+        margin-top: 25px;
+    }
+    .top-c-right{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 375px){
+    .header-logo{
+        font-size: 35px;
+    }
+    .header-logo-2{
+        font-size: 10px;
+    }
+    .header-container{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .top-a-buster{
+        font-size: 50px;
+    }
+    .top-a-the{
+        font-size: 30px;
+    }
 }
